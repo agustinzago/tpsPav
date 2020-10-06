@@ -33,12 +33,20 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.objetivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarObjetivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.actualizarObjetivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cursosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.objetivosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarObjetivosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,11 +59,6 @@
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.ayudaToolStripMenuItem,
-            this.reportesToolStripMenuItem,
-            this.ayudaToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(642, 28);
@@ -64,8 +67,6 @@
             // 
             // archivoToolStripMenuItem
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cursosToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.archivoToolStripMenuItem.Text = "Soporte";
@@ -77,6 +78,12 @@
             this.cursosToolStripMenuItem.Text = "Cursos";
             this.cursosToolStripMenuItem.Click += new System.EventHandler(this.nuevoCursoToolStripMenuItem_Click);
             // 
+            // objetivosToolStripMenuItem
+            // 
+            this.objetivosToolStripMenuItem.Name = "objetivosToolStripMenuItem";
+            this.objetivosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.objetivosToolStripMenuItem.Text = "Objetivos";
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -84,6 +91,13 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.ayudaToolStripMenuItem.Text = "Operaciones";
+            // 
+            // actualizarObjetivosToolStripMenuItem
+            // 
+            this.actualizarObjetivosToolStripMenuItem.Name = "actualizarObjetivosToolStripMenuItem";
+            this.actualizarObjetivosToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
+            this.actualizarObjetivosToolStripMenuItem.Text = "Actualizar Objetivos";
+            this.actualizarObjetivosToolStripMenuItem.Click += new System.EventHandler(this.actualizarObjetivosToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -116,12 +130,47 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Usted se ha logueado como:";
             // 
-            // actualizarObjetivosToolStripMenuItem
+            // soporteToolStripMenuItem
             // 
-            this.actualizarObjetivosToolStripMenuItem.Name = "actualizarObjetivosToolStripMenuItem";
-            this.actualizarObjetivosToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
-            this.actualizarObjetivosToolStripMenuItem.Text = "Actualizar Objetivos";
-            this.actualizarObjetivosToolStripMenuItem.Click += new System.EventHandler(this.actualizarObjetivosToolStripMenuItem_Click);
+            this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.soporteToolStripMenuItem.Text = "Soporte";
+            // 
+            // operacionesToolStripMenuItem
+            // 
+            this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
+            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.operacionesToolStripMenuItem.Text = "Operaciones";
+            // 
+            // reportesToolStripMenuItem1
+            // 
+            this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(82, 24);
+            this.reportesToolStripMenuItem1.Text = "Reportes";
+            // 
+            // ayudaToolStripMenuItem2
+            // 
+            this.ayudaToolStripMenuItem2.Name = "ayudaToolStripMenuItem2";
+            this.ayudaToolStripMenuItem2.Size = new System.Drawing.Size(65, 24);
+            this.ayudaToolStripMenuItem2.Text = "Ayuda";
+            // 
+            // cursosToolStripMenuItem1
+            // 
+            this.cursosToolStripMenuItem1.Name = "cursosToolStripMenuItem1";
+            this.cursosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.cursosToolStripMenuItem1.Text = "Cursos";
+            // 
+            // objetivosToolStripMenuItem1
+            // 
+            this.objetivosToolStripMenuItem1.Name = "objetivosToolStripMenuItem1";
+            this.objetivosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.objetivosToolStripMenuItem1.Text = "Objetivos";
+            // 
+            // actualizarObjetivosToolStripMenuItem1
+            // 
+            this.actualizarObjetivosToolStripMenuItem1.Name = "actualizarObjetivosToolStripMenuItem1";
+            this.actualizarObjetivosToolStripMenuItem1.Size = new System.Drawing.Size(229, 26);
+            this.actualizarObjetivosToolStripMenuItem1.Text = "Actualizar objetivos..";
             // 
             // MainForm
             // 
@@ -155,5 +204,13 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem actualizarObjetivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem objetivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem objetivosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarObjetivosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem2;
     }
 }
